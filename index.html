@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Encryptor Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-title">ENCRIPTADOR DE TEXTO</h1>
+  </header>
+  
+  <main class="container">
+    <section class="form-section">
+      <form id="encryption-form">
+        <label for="text-input" class="form-label">Ingrese una palabra:</label>
+        <input class="form-input" type="text" id="text-input" placeholder="Ingrese el texto aquí">
+        <small class="form-helper">Solo letras minúsculas, sin acento</small>
+        <br><br>
+        <div class="btn-group">
+          <button type="button" class="btn" id="encrypt-btn">Encriptar</button>
+          <button type="button" class="btn" id="decrypt-btn">Desencriptar</button>
+        </div>
+      </form>
+    </section>
+  
+    <section class="output-section">
+      <label for="encrypted-msg" class="output-label">Mensaje Encriptado</label>
+      <input class="output-input" type="text" id="encrypted-msg" readonly>
+      <button type="button" class="btn" id="copy-btn">Copiar</button>
+    </section>
+  </main>
+  
+  <footer class="footer">   
+    <p class="footer-text">Creado por Alessandro Juárez</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
